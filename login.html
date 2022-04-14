@@ -1,0 +1,157 @@
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <title>Pal Associates</title>
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+        <!-- Icon -->
+        <link rel="stylesheet" href="assets/fonts/line-icons.css">
+        <!-- Owl carousel -->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/owl.theme.css">
+        
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/nivo-lightbox.css">
+        <!-- Animate -->
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <!-- Main Style -->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!-- Responsive Style -->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <script>
+          function loginForm() {
+           
+            let username = document.forms["myForm"]["username"].value;
+            let password = document.forms["myForm"]["password"].value;
+     
+            if (username == "") {
+              alert("Please enter username");
+              return false;
+           
+            }
+            else if (password == "") {
+              return false;
+              alert("Please enter password");
+           
+            }else if(username=="admin" && password=="12345"){
+              return true;
+          
+              }
+              else {
+                return false;
+              alert("Wrong username or password.");
+              }
+              
+            
+          }
+          </script>
+      </head>
+      <body>
+    
+        <!-- Header Area wrapper Starts -->
+        <header id="header-wrap">
+          <!-- Navbar Start -->
+          <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+            <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <h1><a href="index.html">Pal Associates</a></h1>     
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="lni-menu"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+                  <li class="nav-item active">
+                    <div class="header-button">
+                      
+                   
+                      
+                    </div>
+                  </li>
+                 
+                 
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Navbar End -->
+    
+          <!-- Hero Area Start -->
+          <div id="hero-area" class="hero-area-bg">
+            <div class="container">      
+              <div class="row">
+                <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                  <div class="contents">
+                    <h2 class="head-title">Welcome to the Pal Associates</h2>
+                    <div class="header-button">
+                    
+                      
+                      <!-- neew  -->
+                      <form name="myForm" onsubmit="return loginForm();" method="POST" action="adminpanel.html">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">User Name</label>
+                          <input type="text" name="username" class="form-control" id="exampleInputEmail1"  placeholder="Enter the User Name"/>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" name="password"  class="form-control" id="exampleInputPassword1" placeholder="Enter the Password"/>
+                          
+                        </div>
+                       
+                        <button type="submit" class="btn btn-common" >Submit</button>
+                      </form>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                  <div class="intro-img">
+                    <img class="img-fluid" src="assets/img/intro-mobile.png" alt="">
+                  </div>            
+                </div>
+              </div> 
+            </div> 
+          </div>
+          <!-- Hero Area End -->
+    
+        </header>
+        <!-- Header Area wrapper End -->
+    <!-- 
+    
+     -->
+        <!-- Footer Section End -->
+    
+        <!-- Go to Top Link -->
+        <a href="#" class="back-to-top">
+            <i class="lni-arrow-up"></i>
+        </a>
+        
+        <!-- Preloader -->
+        <div id="preloader">
+          <div class="loader" id="loader-1"></div>
+        </div>
+        <!-- End Preloader -->
+        
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="assets/js/jquery-min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/wow.js"></script>
+        <script src="assets/js/jquery.nav.js"></script>
+        <script src="assets/js/scrolling-nav.js"></script>
+        <script src="assets/js/jquery.easing.min.js"></script>
+        <script src="assets/js/jquery.counterup.min.js"></script>      
+        <script src="assets/js/waypoints.min.js"></script>   
+        <script src="assets/js/main.js"></script>
+          
+      </body>
+    </html>
+    
